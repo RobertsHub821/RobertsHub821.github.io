@@ -9,6 +9,33 @@
             background-color: lightblue;
 
         }
+        .dropbtn{
+            background-color: black;
+            color:white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown:hover .dropdown-content{
+            display: block; 
+        }
 
 
 
@@ -77,6 +104,10 @@
             display: flex;
             background-color: #05386B;
         }
+        .skillsimages{
+            display: flex;
+            flex-direction: column;
+        }
 
         h1 {
             font-family: fantasy;
@@ -88,6 +119,8 @@
             background-color: #8EE4AF;
 
         }
+      
+        
 
 
         }
@@ -101,14 +134,16 @@
         <h1>Robert Chapman</h1>
     </center>
     <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+        <a href="#aboutme">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#papers">Papers</a>
+        <a href="#contactinfo">Contact Information</a>
+        </div>
 
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#aboutme">About Me</a></li>
-            <li><a class="dropdown-item" href="#skills">Skills</a></li>
-            <li><a class="dropdown-item" href="#resume">Link to Resume</a></li>
-            <li><a class="dropdown-item" href="#papers">Papers in The field of Health Science</a></li>
-            <li><a class="dropdown-item" href="#contactinfo">Contact Information</a></li>
-        </ul>
+     
     </div>
 </header>
 
@@ -119,7 +154,7 @@
             <div class="row">
 
                 <h2>About Me</h2>
-                <div class="col-3 col-md- 4"> <img src="pictures/headshot.2.jpg"></div>
+                <div class="col-3 col-md- 4"> <img class="headshot.2.jpg"></div>
                 <div class="col-6 col-md-8">
                     <p> My name is Robert Chapman and I am 21 years old. I am currently receiving my Bachelor’s in Health Science at Mercy College. I was born and raised in the Bronx, NY. I am a two time brain tumor survivor, which influenced my choice in career.
 
@@ -137,11 +172,11 @@
 
                 <ul>
                     <div class= "skillsimages">
-                        <li>Bilingual (English and Spanish)</li> <img src="pictures/Bilingual.png" />
-                        <li>Hardworking</li> <img src="pictures/Hardworking.png" />
-                        <li>Focused</li> <img src="pictures/Focused.png"/>
-                        <li>People Skills</li> <img src="pictures/Teamwork.png" />
-                    </div>
+                    <li>Bilingual (English and Spanish)</li> <img class="Bilingual.png">
+                    <li>Hardworking</li> <img class="Hardworking.png">
+                    <li>Focused</li> <img class="Focused.png">
+                    <li>People Skills</li> <img class="Teamwork.png"">
+                        </div>
 
                 </ul>
             </section>
@@ -150,7 +185,7 @@
 
     </div>
 
-    <div class= "container">
+    <div class= "container>
                     <div class="row">
                         <section id=resume>
                             <h2> Link To Resume</h2>
